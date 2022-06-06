@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+h2{
+	color: rgb(0, 0, 0);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: burlywood;
+}
+
+/* Style the header */
+.header {
+  background-color: #800000;
+  padding: 30px;
+  text-align: lefht;
+  font-size: 25px;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #640308	;
+  padding: 10px;
+  text-align: center;
+}
+table{
+  border: black;
+  background-color:#1e1e55;
+}
+
+td{
+  border: black;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Tipos de lenguajes de programación</h1>
+  <hr>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#091b33c2;">
+  <h2>Lenguajes de bajo nivel</h2>
+  <p>
+    Este lenguaje de programación es el más antiguo que existe. El lenguaje máquina es el único que comprenden los ordenadores. Cualquier código redactado mediante lenguajes alternativos debe ser convertido a lenguaje máquina para que un ordenador pueda leerlo.
+  </p>
+  </div>
+  
+  <div class="column" style="background-color:#091b33c2;">
+    <h2>Lenguajes de nivel medio</h2>
+  <p>
+    Los lenguajes de nivel medio tienden a ser clasificados como lenguajes de bajo nivel porque siguen dependiendo de ensambladores para poder ser comprendidos por los ordenadores. Pese a esto, permiten llevar a cabo tareas mucho más complejas que los lenguajes de bajo nivel como el uso de funciones.
+  </p>  
+  </div>
+  
+  <div class="column" style="background-color:#091b33c2;">
+    <h2>Lenguajes de alto nivel</h2>
+    <p>
+      Los lenguajes de alto nivel son los más adaptados al lenguaje humano, por lo que son los más sencillos de aprender en términos generales. Como los de medio nivel, tienen que ser traducidos a lenguaje máquina para poder ser ejecutados por un ordenador. 
+    </p>
+  </div>
+
+ 
+
+</div>
+
+<center>
+<table>
+  <thead>
+    <tr>
+      <th>Bajo nivel</th>
+      <th>Nivel medio</th>
+      <th>Alto nivel</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>Codigo máquina</td>
+      <td>C</td>
+      <td>Java</td>
+    </tr>
+    <tr>
+      <td>Ensamblador</td>
+      <td>C++</td>
+      <td>python</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td>Fortran</td>
+      <td>javascript</td>
+    </tr>
+  </tfoot>
+
+</table>
+</center>
+<div class="footer">
+  <h1>Allan Gabriel Aguilar Reyes</h1>
+  <h2>Carnet: 0907-22-17122</h2>
+  <h3>05/06/2022</h3>
+</div>
+
+</body>
+</html>
